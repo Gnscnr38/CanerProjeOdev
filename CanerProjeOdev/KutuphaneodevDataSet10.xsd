@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="KutuphaneodevDataSet10" targetNamespace="http://tempuri.org/KutuphaneodevDataSet10.xsd" xmlns:mstns="http://tempuri.org/KutuphaneodevDataSet10.xsd" xmlns="http://tempuri.org/KutuphaneodevDataSet10.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="KutuphaneodevConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="KutuphaneodevConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CanerProjeOdev.Properties.Settings.GlobalReference.Default.KutuphaneodevConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="emanet_kitaplarTableAdapter" GeneratorDataComponentClassName="emanet_kitaplarTableAdapter" Name="emanet_kitaplar" UserDataComponentName="emanet_kitaplarTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="KutuphaneodevConnectionString (Settings)" DbObjectName="Kutuphaneodev.dbo.emanet_kitaplar" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT uye_no FROM dbo.emanet_kitaplar</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="uye_no" DataSetColumn="uye_no" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="KutuphaneodevDataSet10" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="KutuphaneodevDataSet10" msprop:Generator_UserDSName="KutuphaneodevDataSet10">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="emanet_kitaplar" msprop:Generator_TableClassName="emanet_kitaplarDataTable" msprop:Generator_TableVarName="tableemanet_kitaplar" msprop:Generator_TablePropName="emanet_kitaplar" msprop:Generator_RowDeletingName="emanet_kitaplarRowDeleting" msprop:Generator_RowChangingName="emanet_kitaplarRowChanging" msprop:Generator_RowEvHandlerName="emanet_kitaplarRowChangeEventHandler" msprop:Generator_RowDeletedName="emanet_kitaplarRowDeleted" msprop:Generator_UserTableName="emanet_kitaplar" msprop:Generator_RowChangedName="emanet_kitaplarRowChanged" msprop:Generator_RowEvArgName="emanet_kitaplarRowChangeEvent" msprop:Generator_RowClassName="emanet_kitaplarRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="uye_no" msprop:Generator_ColumnVarNameInTable="columnuye_no" msprop:Generator_ColumnPropNameInRow="uye_no" msprop:Generator_ColumnPropNameInTable="uye_noColumn" msprop:Generator_UserColumnName="uye_no" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
